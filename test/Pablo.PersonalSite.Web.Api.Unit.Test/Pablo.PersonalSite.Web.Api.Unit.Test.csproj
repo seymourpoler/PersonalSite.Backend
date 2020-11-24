@@ -9,12 +9,14 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <PackageReference Include="Moq" Version="4.15.1" />
         <PackageReference Include="NUnit" Version="3.12.0" />
         <PackageReference Include="NUnit3TestAdapter" Version="3.16.1" />
         <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.5.0" />
         <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.2.0" />
         <PackageReference Include="MyTested.AspNetCore.Mvc" Version="3.1.2" />
         <PackageReference Include="MyTested.AspNetCore.Mvc.Configuration" Version="3.1.2" />
+        <PackageReference Include="Shouldly" Version="4.0.1" />
     </ItemGroup>
 
     <ItemGroup>
