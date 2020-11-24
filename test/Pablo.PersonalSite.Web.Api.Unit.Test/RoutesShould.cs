@@ -8,7 +8,7 @@ namespace Pablo.PersonalSite.Web.Api.Unit.Test
     public class RoutesShould
     {
         [Test]
-        public void MapToHealthCheck()
+        public void map_to_health_check()
         {
             MyMvc
                 .Routing()
