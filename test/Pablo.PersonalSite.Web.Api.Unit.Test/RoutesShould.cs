@@ -18,5 +18,17 @@ namespace Pablo.PersonalSite.Web.Api.Unit.Test
                 .To<HealthCheckController>(x =>
                     x.GetStatus());
         }
+        
+        [Test]
+        public void map_to_return_all_job_experiences()
+        {
+            MyMvc
+                .Routing()
+                .ShouldMap(request => request
+                    .WithMethod(HttpMethod.Get)
+                    .WithLocation("/api/jobexperiencies"))
+                .To<JobExperienceController>(x =>
+                    x.Find());
+        }
     }
 }
