@@ -341,3 +341,15 @@ healthchecksdb
 
 # For Mac files
 .DS_Store
+
+
+\src\Pablo.PersonalSite.Web.Api\bin
+/src/Pablo.PersonalSite.Web.Api/bin
+\src\Pablo.PersonalSite.Web.Api\obj
+/src/Pablo.PersonalSite.Web.Api/obj
+
+
+\test\Pablo.PersonalSite.Web.Api.Unit.Test\bin
+/test/Pablo.PersonalSite.Web.Api.Unit.Test/bin
+\test\Pablo.PersonalSite.Web.Api.Unit.Test\obj
+/test/Pablo.PersonalSite.Web.Api.Unit.Test/obj
