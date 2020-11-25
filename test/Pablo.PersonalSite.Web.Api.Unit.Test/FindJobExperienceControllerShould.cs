@@ -17,7 +17,7 @@ namespace Pablo.PersonalSite.Web.Api.Unit.Test
         public void return_all_job_experiencies()
         {
             var jobExperiences = new[] {new JobExperience()};
-            var repository = new Mock<IFindJobExpecienceRepository>();
+            var repository = new Mock<FindJobExpecienceRepository>();
             repository
                 .Setup(x => x.Find())
                 .Returns(jobExperiences);

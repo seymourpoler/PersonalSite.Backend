@@ -11,6 +11,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using Pablo.PersonalSite.Domain.JobExperience.Find;
 
 namespace Pablo.PersonalSite.Web.Api
 {
@@ -31,6 +32,8 @@ namespace Pablo.PersonalSite.Web.Api
             {
                 c.SwaggerDoc("v1", new OpenApiInfo {Title = "Pablo.PersonalSite.Web.Api", Version = "v1"});
             });
+
+            services.AddTransient<IFindJobExpecienceRepository, FindJobExpecienceRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
