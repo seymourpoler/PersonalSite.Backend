@@ -11,6 +11,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\Pablo.PersonalSite.Domain\Pablo.PersonalSite.Domain.csproj" />
+      <ProjectReference Include="..\Pablo.PersonalSite.Persistence\Pablo.PersonalSite.Persistence.csproj" />
     </ItemGroup>
 
 </Project>

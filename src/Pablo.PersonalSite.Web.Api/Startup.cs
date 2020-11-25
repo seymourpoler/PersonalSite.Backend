@@ -12,6 +12,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using Pablo.PersonalSite.Domain.JobExperience.Find;
+using Pablo.PersonalSite.Persistence;
 
 namespace Pablo.PersonalSite.Web.Api
 {
@@ -33,6 +34,8 @@ namespace Pablo.PersonalSite.Web.Api
                 c.SwaggerDoc("v1", new OpenApiInfo {Title = "Pablo.PersonalSite.Web.Api", Version = "v1"});
             });
 
+            services.AddTransient<Configuration>();
+            services.AddTransient<DataBaseContextFactory>();
             services.AddTransient<IFindJobExpecienceRepository, FindJobExpecienceRepository>();
         }
 
