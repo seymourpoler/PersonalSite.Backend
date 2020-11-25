@@ -16,7 +16,7 @@ namespace Pablo.PersonalSite.Web.Api.Controllers
         [HttpGet("/api/jobexperiencies")]
         public IActionResult Find()
         {
-            throw new NotImplementedException();
+            return Ok(repository.Find());
         }
     }
 }

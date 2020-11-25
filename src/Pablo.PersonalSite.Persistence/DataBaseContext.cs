@@ -15,5 +15,7 @@ namespace Pablo.PersonalSite.Persistence
         {
             optionsBuilder.UseNpgsql(configuration.ConnectionString);
         }
+        
+        public DbSet<JobExperience.Models.JobExperience> JobExperiences { get; set; }
     }
 }

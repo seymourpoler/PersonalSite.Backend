@@ -8,5 +8,10 @@
         {
             this.configuration = configuration;
         }
+
+        public DataBaseContext Create()
+        {
+            return new DataBaseContext(configuration);
+        }
     }
 }
