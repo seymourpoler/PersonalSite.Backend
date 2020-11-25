@@ -348,8 +348,12 @@ healthchecksdb
 \src\Pablo.PersonalSite.Web.Api\obj
 /src/Pablo.PersonalSite.Web.Api/obj
 
-
 \test\Pablo.PersonalSite.Web.Api.Unit.Test\bin
 /test/Pablo.PersonalSite.Web.Api.Unit.Test/bin
 \test\Pablo.PersonalSite.Web.Api.Unit.Test\obj
 /test/Pablo.PersonalSite.Web.Api.Unit.Test/obj
+
+\src\Pablo.PersonalSite.Persistence\bin
+/src/Pablo.PersonalSite.Persistence/bin
+\src\Pablo.PersonalSite.Persistence\obj
+/src/Pablo.PersonalSite.Persistence/obj
