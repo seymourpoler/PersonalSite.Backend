@@ -4,16 +4,16 @@ namespace Pablo.PersonalSite.Persistence
 {
     public class DataBaseContext : DbContext
     {
-        private readonly string connectionString;
+        private readonly Configuration configuration;
 
-        public DataBaseContext(string connectionString)
+        public DataBaseContext(Configuration configuration)
         {
-            this.connectionString = connectionString;
+            this.configuration = configuration;
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseNpgsql(connectionString);
+            optionsBuilder.UseNpgsql(configuration.ConnectionString);
         }
     }
 }
