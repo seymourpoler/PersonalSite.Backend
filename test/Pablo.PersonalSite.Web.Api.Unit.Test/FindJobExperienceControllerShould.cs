@@ -16,8 +16,8 @@ namespace Pablo.PersonalSite.Web.Api.Unit.Test
         [Test]
         public void return_all_job_experiencies()
         {
-            var jobExperiences = new[] {new JobExperience()};
-            var repository = new Mock<FindJobExpecienceRepository>();
+            var jobExperiences = new[] {new JobExperience("company", "description")};
+            var repository = new Mock<IFindJobExpecienceRepository>();
             repository
                 .Setup(x => x.Find())
                 .Returns(jobExperiences);
@@ -26,7 +26,7 @@ namespace Pablo.PersonalSite.Web.Api.Unit.Test
             var response = controller.Find() as OkObjectResult;
 
             response.StatusCode.ShouldBe((int) HttpStatusCode.OK);
-            response.Value.ShouldBeOfType<IReadOnlyList<JobExperience>>();
+            response.Value.ShouldBeOfType<JobExperience[]>();
         }
     }
 }
