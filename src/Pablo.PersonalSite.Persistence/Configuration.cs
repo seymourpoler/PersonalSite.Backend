@@ -2,6 +2,6 @@
 {
     public class Configuration
     {
-        public string ConnectionString => "Host=localhost;Database=TuduManayer;Username=admin;Password=1234";
+        public string ConnectionString => "Host=localhost;Database=JobExperiencies;Username=admin;Password=1234";
     }
 }
