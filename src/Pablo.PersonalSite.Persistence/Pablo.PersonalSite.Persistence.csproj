@@ -8,4 +8,8 @@
       <ProjectReference Include="..\Pablo.PersonalSite.Domain\Pablo.PersonalSite.Domain.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="5.0.0" />
+    </ItemGroup>
+
 </Project>
